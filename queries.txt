@@ -1,0 +1,8 @@
+// Retrieve all orders
+db.orders.find({})
+
+// Retrieve orders with status 'pending'
+db.orders.find({ order_status: "pending" })
+
+// Retrieve orders with total_amount > 1000
+db.orders.find({ total_amount: { $gt: 1000 } })
